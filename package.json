@@ -1,0 +1,15 @@
+{
+  "name": "sfdc-litter-check",
+  "version": "1.0.0",
+  "description": "A tool for keeping track of Scott's need to clean the litter box.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Von Schilling",
+  "license": "ISC",
+  "dependencies": {
+    "nforce": "^1.7.0",
+    "node-dash-button": "^0.6.1"
+  }
+}
