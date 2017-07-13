@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:attribute name="litterBox" type="Litter_Box__c"/>
+    <aura:attribute name="cleanDate" type="Object" />
+    <aura:attribute name="backgroundColor" type="String" default="green" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:card class="{!v.backgroundColor}">
+        <aura:set attribute="title">
+			{!v.litterBox.Name}
+        </aura:set>
+        Last Cleaned: <lightning:relativeDateTime value="{!v.cleanDate}" />
+    </lightning:card>
+	
+</aura:component>
